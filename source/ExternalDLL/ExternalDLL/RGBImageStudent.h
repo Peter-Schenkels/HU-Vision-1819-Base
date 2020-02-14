@@ -7,6 +7,11 @@
 #pragma once
 #include "RGBImage.h"
 class RGBImageStudent : public RGBImage {
+
+private:
+	RGB* image;
+
+
 public:
 
 	RGBImageStudent();

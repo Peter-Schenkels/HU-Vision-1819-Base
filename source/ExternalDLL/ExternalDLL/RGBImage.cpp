@@ -13,6 +13,7 @@ RGBImage::RGBImage(const int width, const int height) : Image(width, height) {
 }
 
 RGBImage::~RGBImage() {
+	
 }
 
 void RGBImage::set(const int width, const int height) {
