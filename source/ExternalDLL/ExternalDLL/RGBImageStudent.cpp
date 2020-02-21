@@ -6,9 +6,9 @@ RGBImageStudent::RGBImageStudent() : RGBImage() {
 }
 
 RGBImageStudent::RGBImageStudent(const RGBImageStudent &other) : 
-	RGBImage(other.getWidth(), other.getHeight()),
-	image(new RGB[other.getWidth() * other.getHeight()]) 
+	RGBImage(other.getWidth(), other.getHeight())
 {
+	this->image = other.image;
 	for (int i = 0; i < getWidth() * getHeight(); i++) {
 		image[i] = other.getPixel(i);
 	}
@@ -19,8 +19,9 @@ RGBImageStudent::RGBImageStudent(const int width, const int height) :
 	RGBImage(width, height),
 	image(new RGB[getWidth() * getHeight()]) 
 {
-	//int throwError = 0, e = 1 / throwError;
-	//TODO: Initialize pixel storage
+	for (int i = 0; i < getWidth() * getHeight(); i++) {
+		image[i] = {0,0,0};
+	}
 }
 
 RGBImageStudent::~RGBImageStudent() {
@@ -32,7 +33,7 @@ RGBImageStudent::~RGBImageStudent() {
 void RGBImageStudent::set(const int width, const int height) {
 	RGBImage::set(width, height);
 	delete[]image;
-	image = new RGB[width * height];
+	this->image = new RGB[width * height];
 	//int throwError = 0, e = 1 / throwError;
 	//TODO: resize or create a new pixel storage (Don't forget to delete the old storage)
 }
@@ -40,11 +41,7 @@ void RGBImageStudent::set(const int width, const int height) {
 void RGBImageStudent::set(const RGBImageStudent &other) {
 	RGBImage::set(other.getWidth(), other.getHeight());
 	delete[] image;
-	image = new RGB[getWidth() * getHeight()];
-	for (int i = 0; i < getWidth() * getHeight(); i++)
-	{
-		image[i] = other.image[i];
-	}
+	this->image = other.image;
 
 	//int throwError = 0, e = 1 / throwError;
 	//TODO: resize or create a new pixel storage and copy the object (Don't forget to delete the old storage)
@@ -52,11 +49,8 @@ void RGBImageStudent::set(const RGBImageStudent &other) {
 
 void RGBImageStudent::setPixel(int x, int y, RGB pixel) {
 
-	if (x < getWidth() || y < getHeight()) {
+	if (x < getWidth() && y < getHeight()) {
 		image[y * getWidth() + x] = pixel;
-	}
-	else {
-		int throwError = 0, e = 1 / throwError;
 	}
 	//TODO: no comment needed :)
 }
@@ -92,7 +86,7 @@ void RGBImageStudent::setPixel(int i, RGB pixel) {
 RGB RGBImageStudent::getPixel(int x, int y) const {
 	//int throwError = 0, e = 1 / throwError;
 	//TODO: no comment needed :)
-	if (x < getWidth() || y < getHeight()) {
+	if (x < getWidth() && y < getHeight()) {
 		return image[y * getWidth() + x];
 	} else {
 		return 0;

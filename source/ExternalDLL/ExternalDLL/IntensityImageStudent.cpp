@@ -6,33 +6,56 @@ IntensityImageStudent::IntensityImageStudent() : IntensityImage() {
 }
 
 IntensityImageStudent::IntensityImageStudent(const IntensityImageStudent &other) : IntensityImage(other.getWidth(), other.getHeight()) {
+
+	this->intensity = new Intensity[getHeight() * getWidth()];
+	for(int i = 0; i < getWidth() * getHeight(); i++){
+		intensity[i] = other.intensity[i];	
+	}
 	//int throwError = 0, e = 1 / throwError;
 	//TODO: Create a copy from the other object
 }
 
 IntensityImageStudent::IntensityImageStudent(const int width, const int height) : IntensityImage(width, height) {
+
+	this->intensity = new Intensity[getHeight() * getWidth()];
+	for (int i = 0; i < getWidth() * getHeight(); i++) {
+		intensity[i] =  0;
+	}
 	//int throwError = 0, e = 1 / throwError;
 	//TODO: Initialize pixel storage
 }
 
 IntensityImageStudent::~IntensityImageStudent() {
+
+	delete[] intensity;
+	
 	//int throwError = 0, e = 1 / throwError;
 	//TODO: delete allocated objects
 }
 
 void IntensityImageStudent::set(const int width, const int height) {
 	IntensityImage::set(width, height);
+
+	delete[] intensity;
+	this->intensity = new Intensity[getHeight() * getWidth()];
+	
 	//int throwError = 0, e = 1 / throwError;
 	//TODO: resize or create a new pixel storage (Don't forget to delete the old storage)
 }
 
 void IntensityImageStudent::set(const IntensityImageStudent &other) {
 	IntensityImage::set(other.getWidth(), other.getHeight());
+	set(other.getWidth(), other.getHeight());
+
 	//int throwError = 0, e = 1 / throwError;
 	//TODO: resize or create a new pixel storage and copy the object (Don't forget to delete the old storage)
 }
 
 void IntensityImageStudent::setPixel(int x, int y, Intensity pixel) {
+
+	if(x < getWidth() &&  y < getHeight())
+		intensity[y * getWidth() + x] = pixel;
+	
 	//int throwError = 0, e = 1 / throwError;
 	//TODO: no comment needed :)
 }
@@ -60,16 +83,18 @@ void IntensityImageStudent::setPixel(int i, Intensity pixel) {
 	* 7		7
 	* 8		8
 	*/
+	if (i < getWidth() * getHeight())
+		intensity[i] = pixel;
 }
 
 Intensity IntensityImageStudent::getPixel(int x, int y) const {
 	//int throwError = 0, e = 1 / throwError;
 	//TODO: no comment needed :)
-	return 0;
+	return intensity[y * getWidth() + x];
 }
 
 Intensity IntensityImageStudent::getPixel(int i) const {
 	//int throwError = 0, e = 1 / throwError;
 	//TODO: see setPixel(int i, RGB pixel)
-	return 0;
+	return intensity[i];
 }

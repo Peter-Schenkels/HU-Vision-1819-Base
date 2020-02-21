@@ -7,6 +7,9 @@
 #pragma once
 #include "IntensityImage.h"
 class IntensityImageStudent : public IntensityImage {
+
+	Intensity* intensity;
+	
 public:
 	IntensityImageStudent();
 	IntensityImageStudent(const IntensityImageStudent &other);
