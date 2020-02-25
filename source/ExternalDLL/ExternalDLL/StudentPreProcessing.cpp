@@ -167,5 +167,33 @@ IntensityImage * StudentPreProcessing::stepEdgeDetection(const IntensityImage &i
 
 
 IntensityImage * StudentPreProcessing::stepThresholding(const IntensityImage &image) const {
-	return nullptr;
+	
+	Intensity min_pixel = image.getPixel(0);
+	Intensity max_pixel = image.getPixel(0);
+	
+	IntensityImageStudent* new_image = new IntensityImageStudent(image.getHeight(), image.getWidth());
+	for (int i = 0; i < image.getHeight() * image.getWidth(); i++){
+		Intensity current_pixel = image.getPixel(i);
+		if(min_pixel > current_pixel){
+			min_pixel = current_pixel;
+		}
+		else if (max_pixel < current_pixel){
+			max_pixel = current_pixel;
+		}
+		
+	}
+
+	const unsigned int threshold_value = abs(min_pixel - max_pixel) / 2;
+
+	for (int i = 0; i < image.getHeight() * image.getWidth(); i++) {
+
+		if(image.getPixel(i) > threshold_value)	{
+			new_image->setPixel(i, 0);
+		} else {
+			new_image->setPixel(i, 255);
+		}
+
+	}
+	
+	return new_image;
 }
