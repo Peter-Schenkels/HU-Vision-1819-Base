@@ -53,7 +53,7 @@ void IntensityImageStudent::set(const IntensityImageStudent &other) {
 
 void IntensityImageStudent::setPixel(int x, int y, Intensity pixel) {
 
-	if(x < getWidth() &&  y < getHeight())
+	if(x < getWidth() &&  y < getHeight() && x > -1 && y > -1)
 		intensity[y * getWidth() + x] = pixel;
 	
 	//int throwError = 0, e = 1 / throwError;
@@ -83,18 +83,24 @@ void IntensityImageStudent::setPixel(int i, Intensity pixel) {
 	* 7		7
 	* 8		8
 	*/
-	if (i < getWidth() * getHeight())
+	if (i < getWidth() * getHeight() & i > -1)
 		intensity[i] = pixel;
 }
 
 Intensity IntensityImageStudent::getPixel(int x, int y) const {
 	//int throwError = 0, e = 1 / throwError;
 	//TODO: no comment needed :)
-	return intensity[y * getWidth() + x];
+	if (x < getWidth() && y < getHeight() && x > -1 && y > -1)
+		return intensity[y * getWidth() + x];
+	else
+		return 0;
 }
 
 Intensity IntensityImageStudent::getPixel(int i) const {
 	//int throwError = 0, e = 1 / throwError;
 	//TODO: see setPixel(int i, RGB pixel)
-	return intensity[i];
+	if (i < getWidth() * getHeight() & i > -1)
+		return intensity[i];
+	else
+		return 0;
 }
