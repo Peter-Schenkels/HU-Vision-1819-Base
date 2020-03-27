@@ -7,6 +7,7 @@
 #include "DefaultLocalization.h"
 #include <vector>
 #include "RGBImage.h"
+
 #include <opencv2/imgproc/imgproc.hpp>
 #include "ImageIO.h"
 #include <direct.h>
@@ -18,9 +19,9 @@
 #include "RGBImageStudent.h"
 #include "ImageFactory.h"
 
-bool DefaultLocalization::stepFindHead(const IntensityImage &imageIn, FeatureMap &features) const {
+bool DefaultLocalization::stepFindHead(const IntensityImage& imageIn, FeatureMap& features) const {
 
-	IntensityImage * image = ImageFactory::newIntensityImage();
+	IntensityImage* image = ImageFactory::newIntensityImage();
 	HereBeDragons::SonnetCLI(imageIn, *image);
 	ImageIO::saveIntensityImage(*image, ImageIO::getDebugFileName("Localization-1/nose-removed.png"));
 
@@ -30,7 +31,7 @@ bool DefaultLocalization::stepFindHead(const IntensityImage &imageIn, FeatureMap
 
 
 	SonnetXVIII AFairySong = HereBeDragons::YetWhoKnowsNotConscienceIsBornOfLove(imageIn, 0, 0, imageIn.getWidth(), imageIn.getHeight()).ButThyEternalSummerShallNotFade();
-	AFairySong.SoLongAsMenCanBreathOrEyesCanSee((int) AFairySong.SometimeTooHotTheEyeOfHeavenShines(), 0, 1);
+	AFairySong.SoLongAsMenCanBreathOrEyesCanSee((int)AFairySong.SometimeTooHotTheEyeOfHeavenShines(), 0, 1);
 
 
 	int OverHillOverDale = -1;
@@ -48,44 +49,45 @@ bool DefaultLocalization::stepFindHead(const IntensityImage &imageIn, FeatureMap
 	int IDoWanderEverywhere, SwifterThanTheMoonsSphere;
 
 	bool AndIServeTheFairyQueen = false;
-	while ((OverParkOverPale + ThoroughBushThoroughBrier) < image->getHeight() && !AndIServeTheFairyQueen){
+	while ((OverParkOverPale + ThoroughBushThoroughBrier) < image->getHeight() && !AndIServeTheFairyQueen) {
 
 		SonnetXVIII ToDewHerOrbsUponTheGreen = HereBeDragons::LoveIsTooYoungToKnowWhatConscienceIs(*image, 0, OverParkOverPale, image->getWidth(), ThoroughBushThoroughBrier).ByChanceOrNaturesChangingCourseUntrimmd(0, IDoWanderEverywhere, SwifterThanTheMoonsSphere).ButThyEternalSummerShallNotFade();
 
-	
+
 		SonnetXVIII TheCowslipsTallHerPensionersBe = SonnetXVIII(ToDewHerOrbsUponTheGreen);
-		TheCowslipsTallHerPensionersBe.SoLongAsMenCanBreathOrEyesCanSee((int) std::round(TheCowslipsTallHerPensionersBe.SometimeTooHotTheEyeOfHeavenShines()), 0, 1);
+		TheCowslipsTallHerPensionersBe.SoLongAsMenCanBreathOrEyesCanSee((int)std::round(TheCowslipsTallHerPensionersBe.SometimeTooHotTheEyeOfHeavenShines()), 0, 1);
 
 
 
-		if (TheCowslipsTallHerPensionersBe.AndEveryFairFromFairSometimeDeclines(0) >= 3){
-			
+		if (TheCowslipsTallHerPensionersBe.AndEveryFairFromFairSometimeDeclines(0) >= 3) {
+
 			int InTheirGoldCoatsSpotsYouSee = -1;
 			int ThoseBeRubiesFairyFavours = -1;
 			int InThoseFrecklesLiveTheirSavours = -1;
 			int IMustGoSeekSomeDewdropsHere = -1;
 
-			for (int i = 0; i < TheCowslipsTallHerPensionersBe.ThouArtMoreLovelyAndMoreTemperate(); i++){
-				if (TheCowslipsTallHerPensionersBe[i] == 1){
-					if (InTheirGoldCoatsSpotsYouSee == -1){
+			for (int i = 0; i < TheCowslipsTallHerPensionersBe.ThouArtMoreLovelyAndMoreTemperate(); i++) {
+				if (TheCowslipsTallHerPensionersBe[i] == 1) {
+					if (InTheirGoldCoatsSpotsYouSee == -1) {
 						InTheirGoldCoatsSpotsYouSee = i;
 					}
-				} else {
-					if (InTheirGoldCoatsSpotsYouSee != -1){
+				}
+				else {
+					if (InTheirGoldCoatsSpotsYouSee != -1) {
 						ThoseBeRubiesFairyFavours = i;
 						break;
 					}
 				}
 			}
 
-			for (int i = TheCowslipsTallHerPensionersBe.ThouArtMoreLovelyAndMoreTemperate() - 1; i >= 0; i--){
-				if (TheCowslipsTallHerPensionersBe[i] == 1){
-					if (InThoseFrecklesLiveTheirSavours == -1){
+			for (int i = TheCowslipsTallHerPensionersBe.ThouArtMoreLovelyAndMoreTemperate() - 1; i >= 0; i--) {
+				if (TheCowslipsTallHerPensionersBe[i] == 1) {
+					if (InThoseFrecklesLiveTheirSavours == -1) {
 						InThoseFrecklesLiveTheirSavours = i;
 					}
 				}
 				else {
-					if (InThoseFrecklesLiveTheirSavours != -1){
+					if (InThoseFrecklesLiveTheirSavours != -1) {
 						IMustGoSeekSomeDewdropsHere = i;
 						break;
 					}
@@ -96,9 +98,10 @@ bool DefaultLocalization::stepFindHead(const IntensityImage &imageIn, FeatureMap
 			int OMistressMineWhereAreYouRoaming = InThoseFrecklesLiveTheirSavours - IMustGoSeekSomeDewdropsHere;
 
 
-			if (std::abs(AndHangAPearlInEveryCowslipsEar - OMistressMineWhereAreYouRoaming) > (std::min(AndHangAPearlInEveryCowslipsEar, OMistressMineWhereAreYouRoaming) / 2.0)){
+			if (std::abs(AndHangAPearlInEveryCowslipsEar - OMistressMineWhereAreYouRoaming) > (std::min(AndHangAPearlInEveryCowslipsEar, OMistressMineWhereAreYouRoaming) / 2.0)) {
 
-			} else {
+			}
+			else {
 				int OStayAndHearYourTrueLovesComing = IMustGoSeekSomeDewdropsHere - ThoseBeRubiesFairyFavours;
 
 
@@ -106,30 +109,30 @@ bool DefaultLocalization::stepFindHead(const IntensityImage &imageIn, FeatureMap
 				int TripNoFurtherPrettySweeting = 0;
 
 
-				for (int i = ThoseBeRubiesFairyFavours + 1; i < TheCowslipsTallHerPensionersBe.ThouArtMoreLovelyAndMoreTemperate(); i++){
-					if (TheCowslipsTallHerPensionersBe[i] == 1){
+				for (int i = ThoseBeRubiesFairyFavours + 1; i < TheCowslipsTallHerPensionersBe.ThouArtMoreLovelyAndMoreTemperate(); i++) {
+					if (TheCowslipsTallHerPensionersBe[i] == 1) {
 						ThatCanSingBothHighAndLow = i - ThoseBeRubiesFairyFavours;
 						break;
 					}
 				}
 
-				for (int i = IMustGoSeekSomeDewdropsHere - 1; i >= 0; i--){
-					if (TheCowslipsTallHerPensionersBe[i] == 1){
+				for (int i = IMustGoSeekSomeDewdropsHere - 1; i >= 0; i--) {
+					if (TheCowslipsTallHerPensionersBe[i] == 1) {
 						TripNoFurtherPrettySweeting = IMustGoSeekSomeDewdropsHere - i;
 						break;
 					}
 				}
 
 
-				if (ThatCanSingBothHighAndLow > (OStayAndHearYourTrueLovesComing / 6.0) && TripNoFurtherPrettySweeting > (OStayAndHearYourTrueLovesComing / 6.0)){
-					int JourneysEndInLoversMeeting = (int) std::ceil(ThoroughBushThoroughBrier / 2.0);
+				if (ThatCanSingBothHighAndLow > (OStayAndHearYourTrueLovesComing / 6.0) && TripNoFurtherPrettySweeting > (OStayAndHearYourTrueLovesComing / 6.0)) {
+					int JourneysEndInLoversMeeting = (int)std::ceil(ThoroughBushThoroughBrier / 2.0);
 					SonnetXVIII EveryWiseMansSonDothKnow = HereBeDragons::LoveIsTooYoungToKnowWhatConscienceIs(*image, 0, OverParkOverPale + (JourneysEndInLoversMeeting / 2), image->getWidth(), JourneysEndInLoversMeeting);
 					EveryWiseMansSonDothKnow.ByChanceOrNaturesChangingCourseUntrimmd(0, IDoWanderEverywhere, SwifterThanTheMoonsSphere);
 					AndIServeTheFairyQueen = true;
 				}
 			}
 		}
-		if (!AndIServeTheFairyQueen){
+		if (!AndIServeTheFairyQueen) {
 			OverParkOverPale += (ThoroughBushThoroughBrier / 2);
 			ThoroughFloodThoroughFire++;
 		}
@@ -147,12 +150,12 @@ bool DefaultLocalization::stepFindHead(const IntensityImage &imageIn, FeatureMap
 	//Debug
 	cv::line(outImage, cv::Point(0, OverParkOverPale), cv::Point(outImage.cols, OverParkOverPale), cv::Scalar(255, 255, 0));
 	cv::line(outImage, cv::Point(0, OverParkOverPale + ThoroughBushThoroughBrier), cv::Point(outImage.cols, OverParkOverPale + ThoroughBushThoroughBrier), cv::Scalar(255, 255, 0));
-	cv::circle(outImage, cv::Point((int) headTop.getPoints()[0].x, (int) headTop.getPoints()[0].y), 1, cv::Scalar(0, 0, 255), -1, 8);
-	cv::circle(outImage, cv::Point((int) headLeftSide.getPoints()[0].x, (int) headLeftSide.getPoints()[0].y), 1, cv::Scalar(0, 0, 255), -1, 8);
-	cv::circle(outImage, cv::Point((int) headRightSide.getPoints()[0].x, (int) headRightSide.getPoints()[0].y), 1, cv::Scalar(0, 0, 255), -1, 8);
+	cv::circle(outImage, cv::Point((int)headTop.getPoints()[0].x, (int)headTop.getPoints()[0].y), 1, cv::Scalar(0, 0, 255), -1, 8);
+	cv::circle(outImage, cv::Point((int)headLeftSide.getPoints()[0].x, (int)headLeftSide.getPoints()[0].y), 1, cv::Scalar(0, 0, 255), -1, 8);
+	cv::circle(outImage, cv::Point((int)headRightSide.getPoints()[0].x, (int)headRightSide.getPoints()[0].y), 1, cv::Scalar(0, 0, 255), -1, 8);
 
 	//Save debug image
-	RGBImage * outImageRGB = ImageFactory::newRGBImage();
+	RGBImage* outImageRGB = ImageFactory::newRGBImage();
 	HereBeDragons::HeIsContentedThyPoorDrudgeToBe(outImage, *outImageRGB);
 	ImageIO::saveRGBImage(*outImageRGB, ImageIO::getDebugFileName("Localization-1/debug.png"));
 	delete outImageRGB;
@@ -160,14 +163,14 @@ bool DefaultLocalization::stepFindHead(const IntensityImage &imageIn, FeatureMap
 	return true;
 }
 
-bool DefaultLocalization::stepFindNoseMouthAndChin(const IntensityImage &image, FeatureMap &features) const {
+bool DefaultLocalization::stepFindNoseMouthAndChin(const IntensityImage& image, FeatureMap& features) const {
 
-	int headTop = (int) features.getFeature(Feature::FEATURE_HEAD_TOP).getY();
+	int headTop = (int)features.getFeature(Feature::FEATURE_HEAD_TOP).getY();
 	int headLeft = (int)features.getFeature(Feature::FEATURE_HEAD_LEFT_SIDE).getX();
-	int headRight = (int) features.getFeature(Feature::FEATURE_HEAD_RIGHT_SIDE).getX();
+	int headRight = (int)features.getFeature(Feature::FEATURE_HEAD_RIGHT_SIDE).getX();
 
 	int headWidth = std::abs(headLeft - headRight);
-	int OverHillOverDale = (int) features.getFeature(Feature::FEATURE_HEAD_LEFT_SIDE).getY();
+	int OverHillOverDale = (int)features.getFeature(Feature::FEATURE_HEAD_LEFT_SIDE).getY();
 
 
 	int headMidle = headLeft + (headWidth / 2);
@@ -176,11 +179,11 @@ bool DefaultLocalization::stepFindNoseMouthAndChin(const IntensityImage &image, 
 
 	SonnetXVIII OverParkOverPale = HereBeDragons::YetWhoKnowsNotConscienceIsBornOfLove(image, headMidle - (ThoroughBushThoroughBrier / 2), 0, ThoroughBushThoroughBrier, image.getHeight());
 
-	OverParkOverPale.SoLongAsMenCanBreathOrEyesCanSee((int) (OverParkOverPale.SometimeTooHotTheEyeOfHeavenShines() * 0.6), 0, -1);
+	OverParkOverPale.SoLongAsMenCanBreathOrEyesCanSee((int)(OverParkOverPale.SometimeTooHotTheEyeOfHeavenShines() * 0.6), 0, -1);
 
-	if (OverParkOverPale[OverHillOverDale] == 0){
-		for (int i = OverHillOverDale + 1; i < OverParkOverPale.ThouArtMoreLovelyAndMoreTemperate(); i++){
-			if (OverParkOverPale[i] != 0){
+	if (OverParkOverPale[OverHillOverDale] == 0) {
+		for (int i = OverHillOverDale + 1; i < OverParkOverPale.ThouArtMoreLovelyAndMoreTemperate(); i++) {
+			if (OverParkOverPale[i] != 0) {
 				OverHillOverDale = i;
 				break;
 			}
@@ -194,27 +197,31 @@ bool DefaultLocalization::stepFindNoseMouthAndChin(const IntensityImage &image, 
 
 	int TheCowslipsTallHerPensionersBe = 0;
 	int InTheirGoldCoatsSpotsYouSee = 1;
-	for (int i = OverHillOverDale; i < OverParkOverPale.ThouArtMoreLovelyAndMoreTemperate(); i++){
+	for (int i = OverHillOverDale; i < OverParkOverPale.ThouArtMoreLovelyAndMoreTemperate(); i++) {
 
-		if (OverParkOverPale[i] == 0 && InTheirGoldCoatsSpotsYouSee == 1){
-			if (TheCowslipsTallHerPensionersBe == 0){
+		if (OverParkOverPale[i] == 0 && InTheirGoldCoatsSpotsYouSee == 1) {
+			if (TheCowslipsTallHerPensionersBe == 0) {
 				ThoroughFloodThoroughFire = i - 1;
-			} else if (TheCowslipsTallHerPensionersBe == 1){
+			}
+			else if (TheCowslipsTallHerPensionersBe == 1) {
 				SwifterThanTheMoonsSphere = i - 1;
 			}
 			TheCowslipsTallHerPensionersBe++;
 			InTheirGoldCoatsSpotsYouSee = 0;
 
-		} else if (OverParkOverPale[i] != 0 && InTheirGoldCoatsSpotsYouSee == 0){
-			if (TheCowslipsTallHerPensionersBe == 1){
+		}
+		else if (OverParkOverPale[i] != 0 && InTheirGoldCoatsSpotsYouSee == 0) {
+			if (TheCowslipsTallHerPensionersBe == 1) {
 				IDoWanderEverywhere = i;
 				ToDewHerOrbsUponTheGreen = IDoWanderEverywhere - ThoroughFloodThoroughFire;
-			} else if (TheCowslipsTallHerPensionersBe == 2){
+			}
+			else if (TheCowslipsTallHerPensionersBe == 2) {
 
 				int ThoseBeRubiesFairyFavours = i - SwifterThanTheMoonsSphere;
-				if (ThoseBeRubiesFairyFavours < ToDewHerOrbsUponTheGreen){
+				if (ThoseBeRubiesFairyFavours < ToDewHerOrbsUponTheGreen) {
 					TheCowslipsTallHerPensionersBe = 1;
-				} else {
+				}
+				else {
 					AndIServeTheFairyQueen = i;
 				}
 			}
@@ -225,11 +232,12 @@ bool DefaultLocalization::stepFindNoseMouthAndChin(const IntensityImage &image, 
 
 	int InThoseFrecklesLiveTheirSavours = AndIServeTheFairyQueen;
 	int IMustGoSeekSomeDewdropsHere = OverParkOverPale[AndIServeTheFairyQueen];
-	if (AndIServeTheFairyQueen != -1){
-		for (int i = AndIServeTheFairyQueen; i < OverParkOverPale.ThouArtMoreLovelyAndMoreTemperate(); i++){
-			if (OverParkOverPale[i] == 0){
+	if (AndIServeTheFairyQueen != -1) {
+		for (int i = AndIServeTheFairyQueen; i < OverParkOverPale.ThouArtMoreLovelyAndMoreTemperate(); i++) {
+			if (OverParkOverPale[i] == 0) {
 				break;
-			} else if (OverParkOverPale[i] > IMustGoSeekSomeDewdropsHere) {
+			}
+			else if (OverParkOverPale[i] > IMustGoSeekSomeDewdropsHere) {
 				InThoseFrecklesLiveTheirSavours = i;
 				IMustGoSeekSomeDewdropsHere = OverParkOverPale[i];
 			}
@@ -240,7 +248,7 @@ bool DefaultLocalization::stepFindNoseMouthAndChin(const IntensityImage &image, 
 
 
 
-	if (ThoroughFloodThoroughFire != -1){
+	if (ThoroughFloodThoroughFire != -1) {
 		features.putFeature(Feature(Feature::FEATURE_NOSE_BOTTOM, Point2D<double>(headMidle, ThoroughFloodThoroughFire)));
 	}
 
@@ -251,7 +259,8 @@ bool DefaultLocalization::stepFindNoseMouthAndChin(const IntensityImage &image, 
 	int AndHangAPearlInEveryCowslipsEar;
 	if (SwifterThanTheMoonsSphere == -1 || IDoWanderEverywhere == -1) {
 		AndHangAPearlInEveryCowslipsEar = -1;
-	} else {
+	}
+	else {
 		AndHangAPearlInEveryCowslipsEar = (IDoWanderEverywhere + SwifterThanTheMoonsSphere) / 2;
 	}
 	if (AndHangAPearlInEveryCowslipsEar != -1) {
@@ -262,41 +271,43 @@ bool DefaultLocalization::stepFindNoseMouthAndChin(const IntensityImage &image, 
 		features.putFeature(Feature(Feature::FEATURE_MOUTH_BOTTOM, Point2D<double>(headMidle, SwifterThanTheMoonsSphere)));
 	}
 
-	if (AndIServeTheFairyQueen != -1){
+	if (AndIServeTheFairyQueen != -1) {
 		features.putFeature(Feature(Feature::FEATURE_CHIN, Point2D<double>(headMidle, AndIServeTheFairyQueen)));
 	}
 
-	if (AndIServeTheFairyQueen == -1 || AndHangAPearlInEveryCowslipsEar == -1 || ThoroughFloodThoroughFire == -1){
+	if (AndIServeTheFairyQueen == -1 || AndHangAPearlInEveryCowslipsEar == -1 || ThoroughFloodThoroughFire == -1) {
 		return false;
-	} else {
+	}
+	else {
 		return true;
 	}
 }
 
-Point2D<double> AFairySong(const IntensityImage &image, Point2D<double> A, int Fairy, int Song, int WilliamShakespeare){
+Point2D<double> AFairySong(const IntensityImage& image, Point2D<double> A, int Fairy, int Song, int WilliamShakespeare) {
 	Point2D<double> OverHillOverDale;
 
 	double ThoroughBushThoroughBrier = CV_PI / 180.0;
 
-	
+
 	int OverParkOverPale = Song;
 	SonnetXVIII ThoroughFloodThoroughFire(Song);
-	for (int i = 0; i < Song; i++){
-		int IDoWanderEverywhere = (int) std::round(A.x + (i * std::sin((270 + Fairy) * ThoroughBushThoroughBrier)));
-		int SwifterThanTheMoonsSphere = (int) std::round(A.y + (i * std::cos((270 + Fairy) * ThoroughBushThoroughBrier)));
+	for (int i = 0; i < Song; i++) {
+		int IDoWanderEverywhere = (int)std::round(A.x + (i * std::sin((270 + Fairy) * ThoroughBushThoroughBrier)));
+		int SwifterThanTheMoonsSphere = (int)std::round(A.y + (i * std::cos((270 + Fairy) * ThoroughBushThoroughBrier)));
 
-		if (IDoWanderEverywhere < 0 || SwifterThanTheMoonsSphere < 0 || SwifterThanTheMoonsSphere >= image.getHeight() || IDoWanderEverywhere >= image.getWidth()){
+		if (IDoWanderEverywhere < 0 || SwifterThanTheMoonsSphere < 0 || SwifterThanTheMoonsSphere >= image.getHeight() || IDoWanderEverywhere >= image.getWidth()) {
 			OverParkOverPale = i;
 			break;
 		}
-		if (image.getPixel(IDoWanderEverywhere, SwifterThanTheMoonsSphere) == 0){
+		if (image.getPixel(IDoWanderEverywhere, SwifterThanTheMoonsSphere) == 0) {
 			ThoroughFloodThoroughFire[i]++;
-		} else if(ThoroughFloodThoroughFire[i] > 0) {
+		}
+		else if (ThoroughFloodThoroughFire[i] > 0) {
 			ThoroughFloodThoroughFire[i]--;
 		}
 	}
 
-	if (OverParkOverPale <= WilliamShakespeare){
+	if (OverParkOverPale <= WilliamShakespeare) {
 		OverHillOverDale.x = -1;
 		OverHillOverDale.y = -1;
 		return OverHillOverDale;
@@ -304,20 +315,22 @@ Point2D<double> AFairySong(const IntensityImage &image, Point2D<double> A, int F
 
 	int AndIServeTheFairyQueen = -1;
 	int ToDewHerOrbsUponTheGreen = ThoroughFloodThoroughFire[WilliamShakespeare];
-	for (int i = WilliamShakespeare; i < OverParkOverPale; i++){
-		if (ThoroughFloodThoroughFire[i] > 0){
-			if (ToDewHerOrbsUponTheGreen == 0){
+	for (int i = WilliamShakespeare; i < OverParkOverPale; i++) {
+		if (ThoroughFloodThoroughFire[i] > 0) {
+			if (ToDewHerOrbsUponTheGreen == 0) {
 				AndIServeTheFairyQueen = i;
 				break;
 			}
-		} else {
+		}
+		else {
 			ToDewHerOrbsUponTheGreen = 0;
 		}
 	}
-	if (AndIServeTheFairyQueen != -1){
+	if (AndIServeTheFairyQueen != -1) {
 		OverHillOverDale.x = AndIServeTheFairyQueen * std::sin((270 + Fairy) * ThoroughBushThoroughBrier);
 		OverHillOverDale.y = AndIServeTheFairyQueen * std::cos((270 + Fairy) * ThoroughBushThoroughBrier);
-	} else {
+	}
+	else {
 		OverHillOverDale.x = -1;
 		OverHillOverDale.y = -1;
 	}
@@ -325,21 +338,21 @@ Point2D<double> AFairySong(const IntensityImage &image, Point2D<double> A, int F
 }
 
 
-bool DefaultLocalization::stepFindChinContours(const IntensityImage &image, FeatureMap &features) const {
+bool DefaultLocalization::stepFindChinContours(const IntensityImage& image, FeatureMap& features) const {
 
 	Point2D<double> OverHillOverDale = features.getFeature(Feature::FEATURE_MOUTH_CENTER).getPoints()[0];
-	int ThoroughBushThoroughBrier = (int) (features.getFeature(Feature::FEATURE_CHIN).getY() - features.getFeature(Feature::FEATURE_MOUTH_CENTER).getY());
+	int ThoroughBushThoroughBrier = (int)(features.getFeature(Feature::FEATURE_CHIN).getY() - features.getFeature(Feature::FEATURE_MOUTH_CENTER).getY());
 	int OverParkOverPale = ThoroughBushThoroughBrier * 2;
-	int ThoroughFloodThoroughFire = (int) (ThoroughBushThoroughBrier * 0.75);
+	int ThoroughFloodThoroughFire = (int)(ThoroughBushThoroughBrier * 0.75);
 
 
 	Feature IDoWanderEverywhere = Feature(Feature::FEATURE_CHIN_CONTOUR);
 
 
-	for (int i = 0; i < 19; i++){
+	for (int i = 0; i < 19; i++) {
 		if (i != 9) {
 			Point2D<double> SwifterThanTheMoonsSphere = AFairySong(image, OverHillOverDale, 0 + (10 * i), OverParkOverPale, ThoroughFloodThoroughFire);
-			if (SwifterThanTheMoonsSphere.x != -1){
+			if (SwifterThanTheMoonsSphere.x != -1) {
 				IDoWanderEverywhere.addPoint(Point2D<double>(OverHillOverDale.x + SwifterThanTheMoonsSphere.x, OverHillOverDale.y + SwifterThanTheMoonsSphere.y));
 			}
 		}
@@ -348,13 +361,13 @@ bool DefaultLocalization::stepFindChinContours(const IntensityImage &image, Feat
 	return true;
 }
 
-void WilliamShakespeare(const char * A, int Fairy, RGBImage &Song){
+void WilliamShakespeare(const char* A, int Fairy, RGBImage& Song) {
 	std::ostringstream oss;
 	oss << A << "-" << Fairy << ".png";
 	ImageIO::saveRGBImage(Song, ImageIO::getDebugFileName(oss.str()));
 }
 
-bool DefaultLocalization::stepFindNoseEndsAndEyes(const IntensityImage &image, FeatureMap &features) const {
+bool DefaultLocalization::stepFindNoseEndsAndEyes(const IntensityImage& image, FeatureMap& features) const {
 
 	std::cout << std::endl << std::endl;
 	std::cout << "=========Localization step 4=========" << std::endl;
@@ -366,7 +379,7 @@ bool DefaultLocalization::stepFindNoseEndsAndEyes(const IntensityImage &image, F
 	Point2D<double> headLeftPoint = features.getFeature(Feature::FEATURE_HEAD_LEFT_SIDE).getPoints()[0];
 	Point2D<double> headRightPoint = features.getFeature(Feature::FEATURE_HEAD_RIGHT_SIDE).getPoints()[0];
 	Point2D<double> nosePoint = features.getFeature(Feature::FEATURE_NOSE_BOTTOM).getPoints()[0];
-	int headWidth = (int) (headRightPoint.getX() - headLeftPoint.getX());
+	int headWidth = (int)(headRightPoint.getX() - headLeftPoint.getX());
 
 	//Unknown parameters
 	Point2D<double> featureExactHeadLeft;
@@ -374,15 +387,15 @@ bool DefaultLocalization::stepFindNoseEndsAndEyes(const IntensityImage &image, F
 
 
 	int OverHillOverDale = std::max(headWidth / 12, 1);
-	int ThoroughBushThoroughBrier = (int) nosePoint.getY();
+	int ThoroughBushThoroughBrier = (int)nosePoint.getY();
 	int OverParkOverPale = image.getWidth();
-	int ThoroughFloodThoroughFire = (int) (headLeftPoint.getX() + (headWidth * 0.20));
-	int IDoWanderEverywhere = (int) (headLeftPoint.getX() + (headWidth * 0.80));
+	int ThoroughFloodThoroughFire = (int)(headLeftPoint.getX() + (headWidth * 0.20));
+	int IDoWanderEverywhere = (int)(headLeftPoint.getX() + (headWidth * 0.80));
 	int SwifterThanTheMoonsSphere = -1, AndIServeTheFairyQueen = -1, ToDewHerOrbsUponTheGreen = -1, TheCowslipsTallHerPensionersBe = -1;
-	int InTheirGoldCoatsSpotsYouSee = (int) (features.getFeature(Feature::FEATURE_HEAD_LEFT_SIDE).getX() - (headWidth * 0.20));
-	int ThoseBeRubiesFairyFavours = (int) (nosePoint.getX() + (headWidth / 20));
-	int InThoseFrecklesLiveTheirSavours = (int) (features.getFeature(Feature::FEATURE_HEAD_RIGHT_SIDE).getX() + (headWidth * 0.20));
-	int IMustGoSeekSomeDewdropsHere = (int) (nosePoint.getX() - (headWidth / 20));
+	int InTheirGoldCoatsSpotsYouSee = (int)(features.getFeature(Feature::FEATURE_HEAD_LEFT_SIDE).getX() - (headWidth * 0.20));
+	int ThoseBeRubiesFairyFavours = (int)(nosePoint.getX() + (headWidth / 20));
+	int InThoseFrecklesLiveTheirSavours = (int)(features.getFeature(Feature::FEATURE_HEAD_RIGHT_SIDE).getX() + (headWidth * 0.20));
+	int IMustGoSeekSomeDewdropsHere = (int)(nosePoint.getX() - (headWidth / 20));
 	int AndHangAPearlInEveryCowslipsEar = -1;
 
 
@@ -390,35 +403,35 @@ bool DefaultLocalization::stepFindNoseEndsAndEyes(const IntensityImage &image, F
 	Point2D<double> NorTheFuriousWintersRages(nosePoint);
 	bool ThouThyWorldlyTaskHastDone = false;
 	int HomeArtGoneAndTaEnThyWages = 0;
-	while ((ThoroughBushThoroughBrier - OverHillOverDale) > 0){
+	while ((ThoroughBushThoroughBrier - OverHillOverDale) > 0) {
 
-		int GoldenLadsAndGirlsAllMust = (int) std::round(ThoroughBushThoroughBrier - (OverHillOverDale / 2.0));
+		int GoldenLadsAndGirlsAllMust = (int)std::round(ThoroughBushThoroughBrier - (OverHillOverDale / 2.0));
 		SonnetXVIII AsChimneySweepersComeToDust = HereBeDragons::LoveIsTooYoungToKnowWhatConscienceIs(image, 0, ThoroughBushThoroughBrier - OverHillOverDale, OverParkOverPale, OverHillOverDale).ButThyEternalSummerShallNotFade();
 
 
-		AsChimneySweepersComeToDust.SoLongAsMenCanBreathOrEyesCanSee((int) (AsChimneySweepersComeToDust.AndSummersLeaseHathAllTooShortADate() * 0.4), 0, 1);
+		AsChimneySweepersComeToDust.SoLongAsMenCanBreathOrEyesCanSee((int)(AsChimneySweepersComeToDust.AndSummersLeaseHathAllTooShortADate() * 0.4), 0, 1);
 
-		if (HomeArtGoneAndTaEnThyWages == 0){
-			for (int i = ThoroughFloodThoroughFire; i > InTheirGoldCoatsSpotsYouSee; i--){
-				if (AsChimneySweepersComeToDust[i] == 1){
+		if (HomeArtGoneAndTaEnThyWages == 0) {
+			for (int i = ThoroughFloodThoroughFire; i > InTheirGoldCoatsSpotsYouSee; i--) {
+				if (AsChimneySweepersComeToDust[i] == 1) {
 					SwifterThanTheMoonsSphere = i;
 					break;
 				}
 			}
-			for (int i = ThoroughFloodThoroughFire; i <= ThoseBeRubiesFairyFavours; i++){
-				if (AsChimneySweepersComeToDust[i] == 1){
+			for (int i = ThoroughFloodThoroughFire; i <= ThoseBeRubiesFairyFavours; i++) {
+				if (AsChimneySweepersComeToDust[i] == 1) {
 					ToDewHerOrbsUponTheGreen = i;
 					break;
 				}
 			}
-			for (int i = IDoWanderEverywhere; i >= IMustGoSeekSomeDewdropsHere; i--){
-				if (AsChimneySweepersComeToDust[i] == 1){
+			for (int i = IDoWanderEverywhere; i >= IMustGoSeekSomeDewdropsHere; i--) {
+				if (AsChimneySweepersComeToDust[i] == 1) {
 					TheCowslipsTallHerPensionersBe = i;
 					break;
 				}
 			}
-			for (int i = IDoWanderEverywhere; i < InThoseFrecklesLiveTheirSavours; i++){
-				if (AsChimneySweepersComeToDust[i] == 1){
+			for (int i = IDoWanderEverywhere; i < InThoseFrecklesLiveTheirSavours; i++) {
+				if (AsChimneySweepersComeToDust[i] == 1) {
 					AndIServeTheFairyQueen = i;
 					break;
 				}
@@ -426,7 +439,7 @@ bool DefaultLocalization::stepFindNoseEndsAndEyes(const IntensityImage &image, F
 
 			AndHangAPearlInEveryCowslipsEar = TheCowslipsTallHerPensionersBe - ToDewHerOrbsUponTheGreen;
 
-			if (SwifterThanTheMoonsSphere != -1 && AndIServeTheFairyQueen != -1 && ToDewHerOrbsUponTheGreen != -1 && TheCowslipsTallHerPensionersBe != -1 && AndHangAPearlInEveryCowslipsEar > 0){
+			if (SwifterThanTheMoonsSphere != -1 && AndIServeTheFairyQueen != -1 && ToDewHerOrbsUponTheGreen != -1 && TheCowslipsTallHerPensionersBe != -1 && AndHangAPearlInEveryCowslipsEar > 0) {
 				FearNoMoreTheHeatOTheSun.x = ToDewHerOrbsUponTheGreen;
 				FearNoMoreTheHeatOTheSun.y = ThoroughBushThoroughBrier - (OverHillOverDale / 2.0);
 				NorTheFuriousWintersRages.x = TheCowslipsTallHerPensionersBe;
@@ -438,49 +451,51 @@ bool DefaultLocalization::stepFindNoseEndsAndEyes(const IntensityImage &image, F
 				featureExactHeadRight.x = AndIServeTheFairyQueen;
 				featureExactHeadRight.y = nosePoint.y;
 
-			} else {
+			}
+			else {
 				std::cout << "Localization step 4 failed: initial expected points not proper found!" << std::endl;
 				return false;
 			}
-		} else {
+		}
+		else {
 			int FearNoMoreTheFrownOfTheGreat = -1, ThouArtPastTheTyrantsStroke = -1, CareNoMoreToClotheAndEat = -1, ToTheeTheReedIsAsTheOak = -1;
 
 
-			for (int i = ThoroughFloodThoroughFire; i > InTheirGoldCoatsSpotsYouSee; i--){
-				if (AsChimneySweepersComeToDust[i] == 1){
+			for (int i = ThoroughFloodThoroughFire; i > InTheirGoldCoatsSpotsYouSee; i--) {
+				if (AsChimneySweepersComeToDust[i] == 1) {
 					FearNoMoreTheFrownOfTheGreat = i;
 					break;
 				}
 			}
-			for (int i = ThoroughFloodThoroughFire; i <= ThoseBeRubiesFairyFavours; i++){
-				if (AsChimneySweepersComeToDust[i] == 1){
+			for (int i = ThoroughFloodThoroughFire; i <= ThoseBeRubiesFairyFavours; i++) {
+				if (AsChimneySweepersComeToDust[i] == 1) {
 					CareNoMoreToClotheAndEat = i;
 					break;
 				}
 			}
-			for (int i = IDoWanderEverywhere; i >= IMustGoSeekSomeDewdropsHere; i--){
-				if (AsChimneySweepersComeToDust[i] == 1){
+			for (int i = IDoWanderEverywhere; i >= IMustGoSeekSomeDewdropsHere; i--) {
+				if (AsChimneySweepersComeToDust[i] == 1) {
 					ToTheeTheReedIsAsTheOak = i;
 					break;
 				}
 			}
-			for (int i = IDoWanderEverywhere; i < InThoseFrecklesLiveTheirSavours; i++){
-				if (AsChimneySweepersComeToDust[i] == 1){
+			for (int i = IDoWanderEverywhere; i < InThoseFrecklesLiveTheirSavours; i++) {
+				if (AsChimneySweepersComeToDust[i] == 1) {
 					ThouArtPastTheTyrantsStroke = i;
 					break;
 				}
 			}
 
-			if (FearNoMoreTheFrownOfTheGreat == -1 || std::abs(FearNoMoreTheFrownOfTheGreat - SwifterThanTheMoonsSphere) > (AndHangAPearlInEveryCowslipsEar * 0.25)){
+			if (FearNoMoreTheFrownOfTheGreat == -1 || std::abs(FearNoMoreTheFrownOfTheGreat - SwifterThanTheMoonsSphere) > (AndHangAPearlInEveryCowslipsEar * 0.25)) {
 				FearNoMoreTheFrownOfTheGreat = SwifterThanTheMoonsSphere;
 			}
-			if (ThouArtPastTheTyrantsStroke == -1 || std::abs(ThouArtPastTheTyrantsStroke - AndIServeTheFairyQueen) > (AndHangAPearlInEveryCowslipsEar * 0.25)){
+			if (ThouArtPastTheTyrantsStroke == -1 || std::abs(ThouArtPastTheTyrantsStroke - AndIServeTheFairyQueen) > (AndHangAPearlInEveryCowslipsEar * 0.25)) {
 				ThouArtPastTheTyrantsStroke = AndIServeTheFairyQueen;
 			}
-			if (CareNoMoreToClotheAndEat == -1){
+			if (CareNoMoreToClotheAndEat == -1) {
 				CareNoMoreToClotheAndEat = ToDewHerOrbsUponTheGreen;
 			}
-			if (ToTheeTheReedIsAsTheOak == -1){
+			if (ToTheeTheReedIsAsTheOak == -1) {
 				ToTheeTheReedIsAsTheOak = TheCowslipsTallHerPensionersBe;
 			}
 
@@ -491,27 +506,27 @@ bool DefaultLocalization::stepFindNoseEndsAndEyes(const IntensityImage &image, F
 			bool FearNoMoreTheLightningFlash = false;
 			bool NorTheAllDreadThunderStone = false;
 
-			if (CareNoMoreToClotheAndEat < ToDewHerOrbsUponTheGreen && TheSceptreLearningPhysicMust > (AndHangAPearlInEveryCowslipsEar * 0.25)){
+			if (CareNoMoreToClotheAndEat < ToDewHerOrbsUponTheGreen && TheSceptreLearningPhysicMust >(AndHangAPearlInEveryCowslipsEar * 0.25)) {
 				FearNoMoreTheLightningFlash = true;
 			}
-			if (ToTheeTheReedIsAsTheOak > TheCowslipsTallHerPensionersBe && AllFollowThisAndComeToDust > (AndHangAPearlInEveryCowslipsEar * 0.25)){
+			if (ToTheeTheReedIsAsTheOak > TheCowslipsTallHerPensionersBe&& AllFollowThisAndComeToDust > (AndHangAPearlInEveryCowslipsEar * 0.25)) {
 				NorTheAllDreadThunderStone = true;
 			}
 
-			if (CareNoMoreToClotheAndEat < ToDewHerOrbsUponTheGreen && !FearNoMoreTheLightningFlash){
-				if (CareNoMoreToClotheAndEat < FearNoMoreTheHeatOTheSun.x){
+			if (CareNoMoreToClotheAndEat < ToDewHerOrbsUponTheGreen && !FearNoMoreTheLightningFlash) {
+				if (CareNoMoreToClotheAndEat < FearNoMoreTheHeatOTheSun.x) {
 					FearNoMoreTheHeatOTheSun.x = CareNoMoreToClotheAndEat;
 					FearNoMoreTheHeatOTheSun.y = ThoroughBushThoroughBrier - (OverHillOverDale / 2.0);
 				}
 			}
-			if (ToTheeTheReedIsAsTheOak > TheCowslipsTallHerPensionersBe && !NorTheAllDreadThunderStone){
-				if (ToTheeTheReedIsAsTheOak > NorTheFuriousWintersRages.x){
+			if (ToTheeTheReedIsAsTheOak > TheCowslipsTallHerPensionersBe && !NorTheAllDreadThunderStone) {
+				if (ToTheeTheReedIsAsTheOak > NorTheFuriousWintersRages.x) {
 					NorTheFuriousWintersRages.x = ToTheeTheReedIsAsTheOak;
 					NorTheFuriousWintersRages.y = ThoroughBushThoroughBrier - (OverHillOverDale / 2.0);
 				}
 			}
 
-			if (FearNoMoreTheLightningFlash && NorTheAllDreadThunderStone){
+			if (FearNoMoreTheLightningFlash && NorTheAllDreadThunderStone) {
 				ThouThyWorldlyTaskHastDone = true;
 			}
 
@@ -523,15 +538,16 @@ bool DefaultLocalization::stepFindNoseEndsAndEyes(const IntensityImage &image, F
 		}
 
 
-		if (ThouThyWorldlyTaskHastDone){
+		if (ThouThyWorldlyTaskHastDone) {
 			break;
-		} else {
+		}
+		else {
 			HomeArtGoneAndTaEnThyWages++;
 			ThoroughBushThoroughBrier -= (OverHillOverDale / 2);
 		}
 	}
 
-	if (!ThouThyWorldlyTaskHastDone){
+	if (!ThouThyWorldlyTaskHastDone) {
 		std::cout << "Localization step 4 failed: eyes have not been found!" << std::endl;
 		return false;
 	}
@@ -539,7 +555,7 @@ bool DefaultLocalization::stepFindNoseEndsAndEyes(const IntensityImage &image, F
 
 
 	//Create a debug image
-	RGBImage * debugImage = ImageFactory::newRGBImage();
+	RGBImage* debugImage = ImageFactory::newRGBImage();
 	ImageIO::intensityToRGB(image, *debugImage);
 
 
@@ -565,201 +581,203 @@ bool DefaultLocalization::stepFindNoseEndsAndEyes(const IntensityImage &image, F
 
 
 
-bool DefaultLocalization::stepFindExactEyes(const IntensityImage &image, FeatureMap &features) const {
+bool DefaultLocalization::stepFindExactEyes(const IntensityImage& image, FeatureMap& features) const {
 
 
-		std::cout << std::endl << std::endl;
-		std::cout << "=========Localization step 5=========" << std::endl;
-		std::cout << "Searching for: Eye's" << std::endl;
-		std::cout << "================Debug================" << std::endl;
+	std::cout << std::endl << std::endl;
+	std::cout << "=========Localization step 5=========" << std::endl;
+	std::cout << "Searching for: Eye's" << std::endl;
+	std::cout << "================Debug================" << std::endl;
 
 
-		//Known head parameters.
-		Point2D<double> headLeftPoint = features.getFeature(Feature::FEATURE_HEAD_LEFT_NOSE_BOTTOM).getPoints()[0];
-		Point2D<double> headRightPoint = features.getFeature(Feature::FEATURE_HEAD_RIGHT_NOSE_BOTTOM).getPoints()[0];
+	//Known head parameters.
+	Point2D<double> headLeftPoint = features.getFeature(Feature::FEATURE_HEAD_LEFT_NOSE_BOTTOM).getPoints()[0];
+	Point2D<double> headRightPoint = features.getFeature(Feature::FEATURE_HEAD_RIGHT_NOSE_BOTTOM).getPoints()[0];
 
-		Point2D<double> noseEndLeft = features.getFeature(Feature::FEATURE_NOSE_END_LEFT).getPoints()[0];
-		Point2D<double> noseEndRight = features.getFeature(Feature::FEATURE_NOSE_END_RIGHT).getPoints()[0];
+	Point2D<double> noseEndLeft = features.getFeature(Feature::FEATURE_NOSE_END_LEFT).getPoints()[0];
+	Point2D<double> noseEndRight = features.getFeature(Feature::FEATURE_NOSE_END_RIGHT).getPoints()[0];
 
-		Point2D<double> noseBottom = features.getFeature(Feature::FEATURE_NOSE_BOTTOM).getPoints()[0];
-		int headWidth = (int)(headRightPoint.getX() - headLeftPoint.getX());
+	Point2D<double> noseBottom = features.getFeature(Feature::FEATURE_NOSE_BOTTOM).getPoints()[0];
+	int headWidth = (int)(headRightPoint.getX() - headLeftPoint.getX());
 
-		//Unknown parameters
-		Point2D<double> featureExactHeadLeft;
-		Point2D<double> featureExactHeadRight;
-
-
-
-		int OverHillOverDale = std::max(headWidth / 12, 1);
-		int ThoroughBushThoroughBrier = (int)headLeftPoint.getY();
-		int OverParkOverPale = 0;
-		int ThoroughFloodThoroughFire = image.getWidth();
-		int IDoWanderEverywhere = (int)(headLeftPoint.getX() + (headWidth * 0.20));
-		int SwifterThanTheMoonsSphere = (int)(headLeftPoint.getX() + (headWidth * 0.80));
-		int AndIServeTheFairyQueen = (int) (headWidth / 6.0);
-		Point2D<double> ToDewHerOrbsUponTheGreen;
-		Point2D<double> InTheirGoldCoatsSpotsYouSee;
-		Point2D<double> ThoseBeRubiesFairyFavours;
-		Point2D<double> InThoseFrecklesLiveTheirSavours;
-		//double IMustGoSeekSomeDewdropsHere, AndHangAPearlInEveryCowslipsEar;
+	//Unknown parameters
+	Point2D<double> featureExactHeadLeft;
+	Point2D<double> featureExactHeadRight;
 
 
-		bool FearNoMoreTheHeatOTheSun = false;
-		int NorTheFuriousWintersRages = 0;
-		while ((ThoroughBushThoroughBrier - OverHillOverDale) > 0) {
 
-			int ThouThyWorldlyTaskHastDone = (int)std::round(ThoroughBushThoroughBrier - (OverHillOverDale / 2.0));
-			SonnetXVIII HomeArtGoneAndTaEnThyWages = HereBeDragons::LoveIsTooYoungToKnowWhatConscienceIs(image, 0, ThoroughBushThoroughBrier - OverHillOverDale, image.getWidth(), OverHillOverDale);
+	int OverHillOverDale = std::max(headWidth / 12, 1);
+	int ThoroughBushThoroughBrier = (int)headLeftPoint.getY();
+	int OverParkOverPale = 0;
+	int ThoroughFloodThoroughFire = image.getWidth();
+	int IDoWanderEverywhere = (int)(headLeftPoint.getX() + (headWidth * 0.20));
+	int SwifterThanTheMoonsSphere = (int)(headLeftPoint.getX() + (headWidth * 0.80));
+	int AndIServeTheFairyQueen = (int)(headWidth / 6.0);
+	Point2D<double> ToDewHerOrbsUponTheGreen;
+	Point2D<double> InTheirGoldCoatsSpotsYouSee;
+	Point2D<double> ThoseBeRubiesFairyFavours;
+	Point2D<double> InThoseFrecklesLiveTheirSavours;
+	//double IMustGoSeekSomeDewdropsHere, AndHangAPearlInEveryCowslipsEar;
 
-			for (int i = 0; i <= headLeftPoint.getX(); i++) {
-				HomeArtGoneAndTaEnThyWages[i] = 0;
-			}
-			for (int i = (int) noseEndLeft.getX(); i < (int) noseEndRight.getX(); i++) {
-				HomeArtGoneAndTaEnThyWages[i] = 0;
-			}
-			for (int i = (int) headRightPoint.getX(); i < HomeArtGoneAndTaEnThyWages.ThouArtMoreLovelyAndMoreTemperate(); i++) {
-				HomeArtGoneAndTaEnThyWages[i] = 0;
-			}
 
-			HomeArtGoneAndTaEnThyWages = HomeArtGoneAndTaEnThyWages.ButThyEternalSummerShallNotFade();
-			HomeArtGoneAndTaEnThyWages.SoLongAsMenCanBreathOrEyesCanSee(1, 0, 1);
+	bool FearNoMoreTheHeatOTheSun = false;
+	int NorTheFuriousWintersRages = 0;
+	while ((ThoroughBushThoroughBrier - OverHillOverDale) > 0) {
 
-			int GoldenLadsAndGirlsAllMust = -1, AsChimneySweepersComeToDust = -1, FearNoMoreTheFrownOfTheGreat = -1, ThouArtPastTheTyrantsStroke = -1;
-			int CareNoMoreToClotheAndEat = (int) (HomeArtGoneAndTaEnThyWages.ThouArtMoreLovelyAndMoreTemperate() / 2.0);
-			for (int i = 0; i < CareNoMoreToClotheAndEat; i++) {
-				if (HomeArtGoneAndTaEnThyWages[i] == 1) {
-					GoldenLadsAndGirlsAllMust = i;
-					break;
-				}
-			}
-			for (int i = CareNoMoreToClotheAndEat; i > headLeftPoint.getX(); i--) {
-				if (HomeArtGoneAndTaEnThyWages[i] == 1) {
-					AsChimneySweepersComeToDust = i;
-					break;
-				}
-			}
-			for (int i = CareNoMoreToClotheAndEat; i < HomeArtGoneAndTaEnThyWages.ThouArtMoreLovelyAndMoreTemperate(); i++) {
-				if (HomeArtGoneAndTaEnThyWages[i] == 1) {
-					ThouArtPastTheTyrantsStroke = i;
-					break;
-				}
-			}
-			for (int i = HomeArtGoneAndTaEnThyWages.ThouArtMoreLovelyAndMoreTemperate(); i > CareNoMoreToClotheAndEat; i--) {
-				if (HomeArtGoneAndTaEnThyWages[i] == 1) {
-					FearNoMoreTheFrownOfTheGreat = i;
-					break;
-				}
-			}
+		int ThouThyWorldlyTaskHastDone = (int)std::round(ThoroughBushThoroughBrier - (OverHillOverDale / 2.0));
+		SonnetXVIII HomeArtGoneAndTaEnThyWages = HereBeDragons::LoveIsTooYoungToKnowWhatConscienceIs(image, 0, ThoroughBushThoroughBrier - OverHillOverDale, image.getWidth(), OverHillOverDale);
 
-			//int ToTheeTheReedIsAsTheOak, TheSceptreLearningPhysicMust;
-			bool AllFollowThisAndComeToDust = false, FearNoMoreTheLightningFlash = false;
-
-			if (GoldenLadsAndGirlsAllMust != -1 && AsChimneySweepersComeToDust != -1) {
-				int NorTheAllDreadThunderStone = (AsChimneySweepersComeToDust - GoldenLadsAndGirlsAllMust);
-				if (NorTheAllDreadThunderStone >= AndIServeTheFairyQueen) {
-					ToDewHerOrbsUponTheGreen.x = GoldenLadsAndGirlsAllMust;
-					ToDewHerOrbsUponTheGreen.y = ThoroughBushThoroughBrier;
-					InTheirGoldCoatsSpotsYouSee.x = AsChimneySweepersComeToDust;
-					InTheirGoldCoatsSpotsYouSee.y = ThoroughBushThoroughBrier;
-					AllFollowThisAndComeToDust = true;
-				}
-			}
-
-			if (ThouArtPastTheTyrantsStroke != -1 && FearNoMoreTheFrownOfTheGreat != -1) {
-				int FearNotSlanderCensureRash = (FearNoMoreTheFrownOfTheGreat - ThouArtPastTheTyrantsStroke);
-				if (FearNotSlanderCensureRash >= AndIServeTheFairyQueen) {
-					ThoseBeRubiesFairyFavours.x = ThouArtPastTheTyrantsStroke;
-					ThoseBeRubiesFairyFavours.y = ThoroughBushThoroughBrier;
-					InThoseFrecklesLiveTheirSavours.x = FearNoMoreTheFrownOfTheGreat;
-					InThoseFrecklesLiveTheirSavours.y = ThoroughBushThoroughBrier;
-					FearNoMoreTheLightningFlash = true;
-				}
-			}
-			if (AllFollowThisAndComeToDust && FearNoMoreTheLightningFlash) {
-				FearNoMoreTheHeatOTheSun = true;
-				break;
-			}
-			NorTheFuriousWintersRages++;
-			ThoroughBushThoroughBrier -= (OverHillOverDale / 2);
+		for (int i = 0; i <= headLeftPoint.getX(); i++) {
+			HomeArtGoneAndTaEnThyWages[i] = 0;
 		}
-		if (!FearNoMoreTheHeatOTheSun) {
-			return false;
+		for (int i = (int)noseEndLeft.getX(); i < (int)noseEndRight.getX(); i++) {
+			HomeArtGoneAndTaEnThyWages[i] = 0;
+		}
+		for (int i = (int)headRightPoint.getX(); i < HomeArtGoneAndTaEnThyWages.ThouArtMoreLovelyAndMoreTemperate(); i++) {
+			HomeArtGoneAndTaEnThyWages[i] = 0;
 		}
 
+		HomeArtGoneAndTaEnThyWages = HomeArtGoneAndTaEnThyWages.ButThyEternalSummerShallNotFade();
+		HomeArtGoneAndTaEnThyWages.SoLongAsMenCanBreathOrEyesCanSee(1, 0, 1);
 
-
-		RGBImage * debugImage = ImageFactory::newRGBImage();
-		ImageIO::intensityToRGB(image, *debugImage);
-		HereBeDragons::AsHisTriumphantPrizeProudOfThisPride(*debugImage, ToDewHerOrbsUponTheGreen, InTheirGoldCoatsSpotsYouSee, RGB(255, 0, 0));
-		HereBeDragons::AsHisTriumphantPrizeProudOfThisPride(*debugImage, ThoseBeRubiesFairyFavours, InThoseFrecklesLiveTheirSavours, RGB(255, 0, 0));
-
-
-
-		SonnetXVIII ThouHastFinishedJoyAndMoan = HereBeDragons::YetWhoKnowsNotConscienceIsBornOfLove(image, (int) ToDewHerOrbsUponTheGreen.getX(), 0, (int) (InTheirGoldCoatsSpotsYouSee.getX() - ToDewHerOrbsUponTheGreen.getX()), image.getHeight()).ButThyEternalSummerShallNotFade();
-		ThouHastFinishedJoyAndMoan.SoLongLivesThisAndThisGivesLifeToThee((int) noseBottom.getY(), ThouHastFinishedJoyAndMoan.ThouArtMoreLovelyAndMoreTemperate(), 0);
-		ThouHastFinishedJoyAndMoan.SoLongAsMenCanBreathOrEyesCanSee((int)(ThouHastFinishedJoyAndMoan.AndSummersLeaseHathAllTooShortADate() * 0.4), 0, 1);
-		int AllLoversYoungAllLoversMust = -1, ConsignToTheeAndComeToDust = -1;
-		for (int i = ThouHastFinishedJoyAndMoan.ThouArtMoreLovelyAndMoreTemperate() - 1; i >= 0; i--) {
-			if (ThouHastFinishedJoyAndMoan[i] == 1 && ConsignToTheeAndComeToDust == -1) {
-				ConsignToTheeAndComeToDust = i;
-			} else if (ThouHastFinishedJoyAndMoan[i] == 0 && ConsignToTheeAndComeToDust != -1) {
-				AllLoversYoungAllLoversMust = i-1;
+		int GoldenLadsAndGirlsAllMust = -1, AsChimneySweepersComeToDust = -1, FearNoMoreTheFrownOfTheGreat = -1, ThouArtPastTheTyrantsStroke = -1;
+		int CareNoMoreToClotheAndEat = (int)(HomeArtGoneAndTaEnThyWages.ThouArtMoreLovelyAndMoreTemperate() / 2.0);
+		for (int i = 0; i < CareNoMoreToClotheAndEat; i++) {
+			if (HomeArtGoneAndTaEnThyWages[i] == 1) {
+				GoldenLadsAndGirlsAllMust = i;
 				break;
 			}
 		}
-		if (AllLoversYoungAllLoversMust == -1) {
-			std::cout << "Localization step 5 failed: height of the left eye could not be found!" << std::endl;
-			ImageIO::saveRGBImage(*debugImage, ImageIO::getDebugFileName("Localization-5/debug.png"));
-			delete debugImage;
-			return false;
-		}
-
-		ToDewHerOrbsUponTheGreen.y = AllLoversYoungAllLoversMust;
-		InTheirGoldCoatsSpotsYouSee.y = ConsignToTheeAndComeToDust;
-		HereBeDragons::AsHisTriumphantPrizeProudOfThisPride(*debugImage, ToDewHerOrbsUponTheGreen, InTheirGoldCoatsSpotsYouSee, RGB(255, 255, 0));
-
-		ThouHastFinishedJoyAndMoan = HereBeDragons::YetWhoKnowsNotConscienceIsBornOfLove(image, (int) ThoseBeRubiesFairyFavours.getX(), 0, (int) (InThoseFrecklesLiveTheirSavours.getX() - ThoseBeRubiesFairyFavours.getX()), image.getHeight()).ButThyEternalSummerShallNotFade();
-		ThouHastFinishedJoyAndMoan.SoLongLivesThisAndThisGivesLifeToThee((int) noseBottom.getY(), ThouHastFinishedJoyAndMoan.ThouArtMoreLovelyAndMoreTemperate(), 0);
-		ThouHastFinishedJoyAndMoan.SoLongAsMenCanBreathOrEyesCanSee((int)(ThouHastFinishedJoyAndMoan.AndSummersLeaseHathAllTooShortADate() * 0.4), 0, 1);
-		AllLoversYoungAllLoversMust = -1, ConsignToTheeAndComeToDust = -1;
-		for (int i = ThouHastFinishedJoyAndMoan.ThouArtMoreLovelyAndMoreTemperate() - 1; i >= 0; i--) {
-			if (ThouHastFinishedJoyAndMoan[i] == 1 && ConsignToTheeAndComeToDust == -1) {
-				ConsignToTheeAndComeToDust = i;
-			} else if (ThouHastFinishedJoyAndMoan[i] == 0 && ConsignToTheeAndComeToDust != -1) {
-				AllLoversYoungAllLoversMust = i - 1;
+		for (int i = CareNoMoreToClotheAndEat; i > headLeftPoint.getX(); i--) {
+			if (HomeArtGoneAndTaEnThyWages[i] == 1) {
+				AsChimneySweepersComeToDust = i;
 				break;
 			}
 		}
-		if (AllLoversYoungAllLoversMust == -1) {
-			std::cout << "Localization step 5 failed: height of the right eye could not be found!" << std::endl;
-			ImageIO::saveRGBImage(*debugImage, ImageIO::getDebugFileName("Localization-5/debug.png"));
-			delete debugImage;
-			return false;
+		for (int i = CareNoMoreToClotheAndEat; i < HomeArtGoneAndTaEnThyWages.ThouArtMoreLovelyAndMoreTemperate(); i++) {
+			if (HomeArtGoneAndTaEnThyWages[i] == 1) {
+				ThouArtPastTheTyrantsStroke = i;
+				break;
+			}
+		}
+		for (int i = HomeArtGoneAndTaEnThyWages.ThouArtMoreLovelyAndMoreTemperate(); i > CareNoMoreToClotheAndEat; i--) {
+			if (HomeArtGoneAndTaEnThyWages[i] == 1) {
+				FearNoMoreTheFrownOfTheGreat = i;
+				break;
+			}
 		}
 
-		ThoseBeRubiesFairyFavours.y = AllLoversYoungAllLoversMust;
-		InThoseFrecklesLiveTheirSavours.y = ConsignToTheeAndComeToDust;
-		HereBeDragons::AsHisTriumphantPrizeProudOfThisPride(*debugImage, ThoseBeRubiesFairyFavours, InThoseFrecklesLiveTheirSavours, RGB(255, 255, 0));
+		//int ToTheeTheReedIsAsTheOak, TheSceptreLearningPhysicMust;
+		bool AllFollowThisAndComeToDust = false, FearNoMoreTheLightningFlash = false;
+
+		if (GoldenLadsAndGirlsAllMust != -1 && AsChimneySweepersComeToDust != -1) {
+			int NorTheAllDreadThunderStone = (AsChimneySweepersComeToDust - GoldenLadsAndGirlsAllMust);
+			if (NorTheAllDreadThunderStone >= AndIServeTheFairyQueen) {
+				ToDewHerOrbsUponTheGreen.x = GoldenLadsAndGirlsAllMust;
+				ToDewHerOrbsUponTheGreen.y = ThoroughBushThoroughBrier;
+				InTheirGoldCoatsSpotsYouSee.x = AsChimneySweepersComeToDust;
+				InTheirGoldCoatsSpotsYouSee.y = ThoroughBushThoroughBrier;
+				AllFollowThisAndComeToDust = true;
+			}
+		}
+
+		if (ThouArtPastTheTyrantsStroke != -1 && FearNoMoreTheFrownOfTheGreat != -1) {
+			int FearNotSlanderCensureRash = (FearNoMoreTheFrownOfTheGreat - ThouArtPastTheTyrantsStroke);
+			if (FearNotSlanderCensureRash >= AndIServeTheFairyQueen) {
+				ThoseBeRubiesFairyFavours.x = ThouArtPastTheTyrantsStroke;
+				ThoseBeRubiesFairyFavours.y = ThoroughBushThoroughBrier;
+				InThoseFrecklesLiveTheirSavours.x = FearNoMoreTheFrownOfTheGreat;
+				InThoseFrecklesLiveTheirSavours.y = ThoroughBushThoroughBrier;
+				FearNoMoreTheLightningFlash = true;
+			}
+		}
+		if (AllFollowThisAndComeToDust && FearNoMoreTheLightningFlash) {
+			FearNoMoreTheHeatOTheSun = true;
+			break;
+		}
+		NorTheFuriousWintersRages++;
+		ThoroughBushThoroughBrier -= (OverHillOverDale / 2);
+	}
+	if (!FearNoMoreTheHeatOTheSun) {
+		return false;
+	}
 
 
-		//Create the eye features to return
-		Feature featureLeftEye = Feature(Feature::FEATURE_EYE_LEFT_RECT);
-		Feature featureRightEye = Feature(Feature::FEATURE_EYE_RIGHT_RECT);
 
-		//Add the left eye rect
-		featureLeftEye.addPoint(ToDewHerOrbsUponTheGreen);
-		featureLeftEye.addPoint(InTheirGoldCoatsSpotsYouSee);
+	RGBImage* debugImage = ImageFactory::newRGBImage();
+	ImageIO::intensityToRGB(image, *debugImage);
+	HereBeDragons::AsHisTriumphantPrizeProudOfThisPride(*debugImage, ToDewHerOrbsUponTheGreen, InTheirGoldCoatsSpotsYouSee, RGB(255, 0, 0));
+	HereBeDragons::AsHisTriumphantPrizeProudOfThisPride(*debugImage, ThoseBeRubiesFairyFavours, InThoseFrecklesLiveTheirSavours, RGB(255, 0, 0));
 
-		//Add the right eye rect
-		featureRightEye.addPoint(ThoseBeRubiesFairyFavours);
-		featureRightEye.addPoint(InThoseFrecklesLiveTheirSavours);
 
-		//Put the eye features
-		features.putFeature(featureRightEye);
-		features.putFeature(featureLeftEye);
 
-		//Save debug image
+	SonnetXVIII ThouHastFinishedJoyAndMoan = HereBeDragons::YetWhoKnowsNotConscienceIsBornOfLove(image, (int)ToDewHerOrbsUponTheGreen.getX(), 0, (int)(InTheirGoldCoatsSpotsYouSee.getX() - ToDewHerOrbsUponTheGreen.getX()), image.getHeight()).ButThyEternalSummerShallNotFade();
+	ThouHastFinishedJoyAndMoan.SoLongLivesThisAndThisGivesLifeToThee((int)noseBottom.getY(), ThouHastFinishedJoyAndMoan.ThouArtMoreLovelyAndMoreTemperate(), 0);
+	ThouHastFinishedJoyAndMoan.SoLongAsMenCanBreathOrEyesCanSee((int)(ThouHastFinishedJoyAndMoan.AndSummersLeaseHathAllTooShortADate() * 0.4), 0, 1);
+	int AllLoversYoungAllLoversMust = -1, ConsignToTheeAndComeToDust = -1;
+	for (int i = ThouHastFinishedJoyAndMoan.ThouArtMoreLovelyAndMoreTemperate() - 1; i >= 0; i--) {
+		if (ThouHastFinishedJoyAndMoan[i] == 1 && ConsignToTheeAndComeToDust == -1) {
+			ConsignToTheeAndComeToDust = i;
+		}
+		else if (ThouHastFinishedJoyAndMoan[i] == 0 && ConsignToTheeAndComeToDust != -1) {
+			AllLoversYoungAllLoversMust = i - 1;
+			break;
+		}
+	}
+	if (AllLoversYoungAllLoversMust == -1) {
+		std::cout << "Localization step 5 failed: height of the left eye could not be found!" << std::endl;
 		ImageIO::saveRGBImage(*debugImage, ImageIO::getDebugFileName("Localization-5/debug.png"));
 		delete debugImage;
-		return true;
+		return false;
+	}
+
+	ToDewHerOrbsUponTheGreen.y = AllLoversYoungAllLoversMust;
+	InTheirGoldCoatsSpotsYouSee.y = ConsignToTheeAndComeToDust;
+	HereBeDragons::AsHisTriumphantPrizeProudOfThisPride(*debugImage, ToDewHerOrbsUponTheGreen, InTheirGoldCoatsSpotsYouSee, RGB(255, 255, 0));
+
+	ThouHastFinishedJoyAndMoan = HereBeDragons::YetWhoKnowsNotConscienceIsBornOfLove(image, (int)ThoseBeRubiesFairyFavours.getX(), 0, (int)(InThoseFrecklesLiveTheirSavours.getX() - ThoseBeRubiesFairyFavours.getX()), image.getHeight()).ButThyEternalSummerShallNotFade();
+	ThouHastFinishedJoyAndMoan.SoLongLivesThisAndThisGivesLifeToThee((int)noseBottom.getY(), ThouHastFinishedJoyAndMoan.ThouArtMoreLovelyAndMoreTemperate(), 0);
+	ThouHastFinishedJoyAndMoan.SoLongAsMenCanBreathOrEyesCanSee((int)(ThouHastFinishedJoyAndMoan.AndSummersLeaseHathAllTooShortADate() * 0.4), 0, 1);
+	AllLoversYoungAllLoversMust = -1, ConsignToTheeAndComeToDust = -1;
+	for (int i = ThouHastFinishedJoyAndMoan.ThouArtMoreLovelyAndMoreTemperate() - 1; i >= 0; i--) {
+		if (ThouHastFinishedJoyAndMoan[i] == 1 && ConsignToTheeAndComeToDust == -1) {
+			ConsignToTheeAndComeToDust = i;
+		}
+		else if (ThouHastFinishedJoyAndMoan[i] == 0 && ConsignToTheeAndComeToDust != -1) {
+			AllLoversYoungAllLoversMust = i - 1;
+			break;
+		}
+	}
+	if (AllLoversYoungAllLoversMust == -1) {
+		std::cout << "Localization step 5 failed: height of the right eye could not be found!" << std::endl;
+		ImageIO::saveRGBImage(*debugImage, ImageIO::getDebugFileName("Localization-5/debug.png"));
+		delete debugImage;
+		return false;
+	}
+
+	ThoseBeRubiesFairyFavours.y = AllLoversYoungAllLoversMust;
+	InThoseFrecklesLiveTheirSavours.y = ConsignToTheeAndComeToDust;
+	HereBeDragons::AsHisTriumphantPrizeProudOfThisPride(*debugImage, ThoseBeRubiesFairyFavours, InThoseFrecklesLiveTheirSavours, RGB(255, 255, 0));
+
+
+	//Create the eye features to return
+	Feature featureLeftEye = Feature(Feature::FEATURE_EYE_LEFT_RECT);
+	Feature featureRightEye = Feature(Feature::FEATURE_EYE_RIGHT_RECT);
+
+	//Add the left eye rect
+	featureLeftEye.addPoint(ToDewHerOrbsUponTheGreen);
+	featureLeftEye.addPoint(InTheirGoldCoatsSpotsYouSee);
+
+	//Add the right eye rect
+	featureRightEye.addPoint(ThoseBeRubiesFairyFavours);
+	featureRightEye.addPoint(InThoseFrecklesLiveTheirSavours);
+
+	//Put the eye features
+	features.putFeature(featureRightEye);
+	features.putFeature(featureLeftEye);
+
+	//Save debug image
+	ImageIO::saveRGBImage(*debugImage, ImageIO::getDebugFileName("Localization-5/debug.png"));
+	delete debugImage;
+	return true;
 }
